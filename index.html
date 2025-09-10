@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Riza Syahputra</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            @apply text-gray-700 hover:text-blue-600 font-medium;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #2563eb;
+            left: 0; /* Changed from -2px to 0 for better alignment */
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+           width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+ <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+     <h1 class="text-xl font-bold text-blue-600">Profile Web</h1>
+
+     <nav class="space-x-6 hidden md:flex" id="desktop-nav">
+       <a href="#home" class="nav-link transition">Home</a>
+       <a href="#about" class="nav-link transition">About</a>
+       <a href="#gallery" class="nav-link transition">Gallery</a>
+       <a href="#contact" class="nav-link transition">Contact</a>
+       <a href="#login" class="bg-blue-600 text-white px-4 py-2
+       rounded hover:bg-blue-700 transition">Login</a>
+     </nav>
+
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-blue-600
+      focus:outline-none transition-transform duration-300">
+        <svg id="menu-icon" class="w-6 h-6" fill="none"
+        stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+</div>
+    
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4
+      space-y-2 transition-all duration-300">
+      <a href="#home" class="block nav-link">Home</a>
+      <a href="#about" class="block nav-link">About</a>
+      <a href="#gallery" class="block nav-link">Gallery</a>
+      <a href="#contact" class="block bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700">Login</a>
+      </div>
+  </header>
+
+  <section id="home" class="relative overflow-hidden" data-aos="fade-down">
+    <div class="relative h-[500px]">
+      <div id="slider" class="w-full h-full relative">
+
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100"
+             style="background-image: url('bg.png')"></div>
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+             style="background-image: url('background.png')"></div>
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+             style="background-image: url('back.png')"></div>
+      </div>
+
+      <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+
+      <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-4">
+        <div class="text-white">
+          <h2 class="text-4xl font-bold mb-4">Selamat Datang di Pengenalan Profile Saya</h2>
+          <p class="text-lg mb-6">Situs Yang Membahas Tentang Portofolio</p>
+          <a href="#about" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold
+          hover:bg-gray-100 transition">Explore Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="relative bg-fixed bg-center bg-cover text-white py-32" style="background-image:
+           url('rizasyahputra.png');" data-aos="fade-up">
+   <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+   <div class="relative z-10 max-w-2xl mx-auto text-center px-4">
+    <h3 class="text-3xl font-bold mb-6">Tentang Saya</h3>
+    <p class="max-w-2xl mx-auto text-gray-200">Saya merupakan seorang pekerja lepas yang bekerja sebagai photografer, videografer dan juga editor</p>
+  </div>
+</section>
+
+<section id="gallery" class="py-16 bg-gray-100">
+   <div class="max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-down">Gallery</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="rizz.png"
+      class="rounded shadow-md hover:scale-105 transition-transform duration-300"
+      alt="Gallery 1" data-aos="zoom-in"/>
+      <video class="rounded shadow-md hover:scale-105 transition-transform duration-300"
+       data-aos="zoom-in" data-aos-delay="100" autoplay muted loop playsinline>
+  <source src="porto.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+      <img src="riza.JPG"
+      class="rounded shadow-md hover:scale-105 transition-transform duration-300"
+      alt="Gallery 3" data-aos="zoom-in" data-aos-delay="200"/>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-white" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Hubungi Kami</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Nama" class="w-full px-4 py-2 border rounded
+      focus:ring-2 focus:ring-blue-500"/>
+      <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded
+      focus:ring-2 focus:ring-blue-500"/>
+      <textarea placeholder="Pesan" rows="5" class="w-full px-4 py-2 border rounded
+      focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded
+      hover:bg-blue-700 transition">Kirim</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-white border-t py-6 text-center text-gray-500 text-sm" data-aos="fade-up">
+  © 2025 PhortofolioWeb. All rights reserved
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000 });
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("rotate-90");
+    });
+
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // Function to set active link
+    function setActiveLink(id) {
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    // Handle click on nav links
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            setActiveLink(this.getAttribute("href").substring(1)); // Remove '#'
+            if (!mobileMenu.classList.contains("hidden")) {
+                mobileMenu.classList.add("hidden");
+                menuIcon.classList.remove("rotate-90"); // Reset icon when menu closes
+            }
+        });
+    });
+
+    // Handle scroll to set active link
+    window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section[id]");
+        let currentActiveSection = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 80; // Adjust offset for fixed header
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                currentActiveSection = sectionId;
+            }
+        });
+        setActiveLink(currentActiveSection);
+    });
+
+    // Image Slider
+    const slides = document.querySelectorAll("#slider .slide");
+    let currentSlide = 0;
+
+    setInterval(() => {
+        slides[currentSlide].classList.remove("opacity-100");
+        slides[currentSlide].classList.add("opacity-0");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.remove("opacity-0");
+        slides[currentSlide].classList.add("opacity-100");
+    }, 5000);
+</script>
+</body>
+<audio autoplay loop controls>
+  <source src="Nuh... - Teruntuk Mia (Official Audio).mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+</html>
