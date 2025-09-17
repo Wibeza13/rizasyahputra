@@ -35,6 +35,11 @@
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-800">
 
+    <audio id="background-audio" autoplay loop muted style="display:none;">
+  <source src="Nuh... - Teruntuk Mia (Official Audio).mp3" type="audio/mpeg" />
+
+</audio>
+
  <header class="bg-white shadow-md sticky top-0 z-50">
    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
      <h1 class="text-xl font-bold text-blue-600">Profile Web</h1>
@@ -44,8 +49,6 @@
        <a href="#about" class="nav-link transition">About</a>
        <a href="#gallery" class="nav-link transition">Gallery</a>
        <a href="#contact" class="nav-link transition">Contact</a>
-       <a href="#login" class="bg-blue-600 text-white px-4 py-2
-       rounded hover:bg-blue-700 transition">Login</a>
      </nav>
 
     <div class="md:hidden">
@@ -85,10 +88,10 @@
 
       <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-4">
         <div class="text-white">
-          <h2 class="text-4xl font-bold mb-4">Selamat Datang di Pengenalan Profile Saya</h2>
-          <p class="text-lg mb-6">Situs Yang Membahas Tentang Portofolio</p>
+          <h2 class="text-4xl font-bold mb-4">Selamat Datang di Pengenalan Profile Riza Syahputra </h2>
+          <p class="text-lg mb-6">Situs Yang Membahas Tentang Portofolio Saya</p>
           <a href="#about" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold
-          hover:bg-gray-100 transition">Explore Now</a>
+          hover:bg-gray-100 transition">Explore Now!</a>
         </div>
       </div>
     </div>
@@ -104,25 +107,71 @@
 </section>
 
 <section id="gallery" class="py-16 bg-gray-100">
-   <div class="max-w-6xl mx-auto px-4">
+  <div class="max-w-6xl mx-auto px-4">
     <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-down">Gallery</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <img src="rizz.png"
-      class="rounded shadow-md hover:scale-105 transition-transform duration-300"
-      alt="Gallery 1" data-aos="zoom-in"/>
-      <video class="rounded shadow-md hover:scale-105 transition-transform duration-300"
-       data-aos="zoom-in" data-aos-delay="100" autoplay muted loop playsinline>
-  <source src="porto.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-      <img src="riza.JPG"
-      class="rounded shadow-md hover:scale-105 transition-transform duration-300"
-      alt="Gallery 3" data-aos="zoom-in" data-aos-delay="200"/>
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+        <img src="rizz.png" alt="Gallery 1" class="w-full rounded" />
+        <figcaption class="mt-2 text-center text-gray-700">Mendokumentasikan Acara Dikdasmen</figcaption>
+      </figure>
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="100">
+        <video autoplay muted loop playsinline class="w-full rounded">
+          <source src="porto.mp4" type="video/mp4" />
+        </video>
+        <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Acara Kemerdekaan PR IPM SMK MUDA</figcaption>
+      </figure>
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
+        <img src="riza.JPG" alt="Gallery 3" class="w-full rounded" />
+        <figcaption class="mt-2 text-center text-gray-700">Social Media Management Brand La Coutivador</figcaption>
+      </figure>
+      
+    </div>
+  </div>
+</section>
+
+<section id="gallery-2" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+        <img src="jaksa.JPG" alt="Gallery 4" class="w-full rounded" />
+        <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Acara Jaksa</figcaption>
+      </figure>
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+        <img src="dikdasmen.JPG" alt="Gallery 5" class="w-full rounded" />
+        <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Dikdasmen</figcaption>
+      </figure>
+      
+      <figure class="rounded shadow-md hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
+        <img src="wisuda tahfizh.JPG" alt="Gallery 6" class="w-full rounded" />
+        <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Wisuda Tahfizh</figcaption>
+      </figure>
+      
     </div>
   </div>
 </section>
 
 
+<section id="contact" class="py-16 bg-white" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Contact ME!</h3>
+    <div class="flex justify-center space-x-6">
+      <a href="https://www.instagram.com/wibezaxxt?utm_source=ig_web_button_share_sheet&igsh=MWZjajdqcWxpaWVnYQ==" target="_blank" rel="noopener noreferrer">
+        <img src="instagram.jpg" alt="Instagram" style="width: 50px; height: auto;">
+      </a>
+      <a href="https://wa.me/6285878431028?text=Halo%2C%20apa%20kabar" target="_blank" rel="noopener noreferrer">
+        <img src="whatsupp.jpg" alt="Whatsapp" style="width: 50px; height: auto;">
+      </a>
+      <a href="mailto:rizasyahput@gmail.com?subject=Halo&body=Ini%20adalah%20isi%20email%20contoh.">
+        <img src="email.png" alt="Kirim Email" style="width: 50px; height: auto;">
+      </a>
+    </div>
+  </div>
+</section>
 
 <footer class="bg-white border-t py-6 text-center text-gray-500 text-sm" data-aos="fade-up">
   © 2025 PhortofolioWeb. All rights reserved
@@ -196,8 +245,5 @@
     }, 5000);
 </script>
 </body>
-<audio autoplay loop controls>
-  <source src="Nuh... - Teruntuk Mia (Official Audio).mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
 </audio>
 </html>
