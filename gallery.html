@@ -51,7 +51,7 @@
             <nav class="space-x-6 hidden md:flex" id="desktop-nav">
                 <a href="index.html#home" class="nav-link transition">Home</a>
                 <a href="index.html#about" class="nav-link transition">About</a>
-                <a href="gallery.html" class="nav-link active transition">Gallery</a> <!-- Active di halaman ini -->
+                <a href="gallery.html" class="nav-link active transition">Gallery</a>
                 <a href="index.html#contact" class="nav-link transition">Contact</a>
             </nav>
 
@@ -67,11 +67,35 @@
         <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 transition-all duration-300">
             <a href="index.html#home" class="block nav-link">Home</a>
             <a href="index.html#about" class="block nav-link">About</a>
-            <a href="gallery.html" class="block nav-link active">Gallery</a> <!-- Active di mobile -->
+            <a href="gallery.html" class="block nav-link active">Gallery</a>
             <a href="index.html#contact" class="block nav-link">Contact</a>
         </div>
     </header>
-    
+
+    <!-- Hero Section (Tambahan untuk pengantar, mirip halaman utama) -->
+    <section id="gallery-hero" class="relative overflow-hidden" data-aos="fade-down">
+        <div class="relative h-[500px]">
+            <div id="hero-slider" class="w-full h-full relative">
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100"
+                     style="background-image: url('bg.png')"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+                     style="background-image: url('background.png')"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+                     style="background-image: url('back.png')"></div>
+            </div>
+
+            <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+
+            <div class="absolute inset-0 z-10 flex items-center justify-center text-center px-4">
+                <div class="text-white">
+                    <h2 class="text-4xl font-bold mb-4">Gallery Portofolio Saya</h2>
+                    <p class="text-lg mb-6">Jelajahi karya fotografi, videografi, dan editing saya. Scroll ke bawah untuk melihat lebih banyak!</p>
+                    <a href="#gallery-content" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">Lihat Karya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section Gallery Utama (Panjang dan Scrollable) -->
     <section id="gallery-content" class="py-16 bg-gray-100">
         <div class="max-w-6xl mx-auto px-4">
@@ -116,42 +140,42 @@
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Wisuda Tahfizh</figcaption>
                 </figure>
                 
-                <!-- Item 7 (Tambahan - Placeholder, ganti src dengan aset asli) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="600" data-modal-src="item7.png" data-modal-type="image" data-modal-caption="Karya Fotografi Lanskap 1">
-                    <img src="item7.png" alt="Gallery 7" class="w-full rounded" />
+                <!-- Item 7 (Tambahan - Placeholder, ganti src dengan aset asli atau placeholder online untuk test) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="600" data-modal-src="https://via.placeholder.com/300x200?text=Item+7" data-modal-type="image" data-modal-caption="Karya Fotografi Lanskap 1">
+                    <img src="https://via.placeholder.com/300x200?text=Item+7" alt="Gallery 7" class="w-full rounded" />
                     <figcaption class="mt-2 text-center text-gray-700">Karya Fotografi Lanskap 1</figcaption>
                 </figure>
                 
-                <!-- Item 8 (Tambahan - Video placeholder) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="700" data-modal-src="video2.mp4" data-modal-type="video" data-modal-caption="Videografi Event 2">
+                <!-- Item 8 (Tambahan - Video placeholder; ganti src) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="700" data-modal-src="https://www.w3schools.com/html/mov_bbb.mp4" data-modal-type="video" data-modal-caption="Videografi Event 2">
                     <video autoplay muted loop playsinline class="w-full rounded">
-                        <source src="video2.mp4" type="video/mp4" />
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                     </video>
                     <figcaption class="mt-2 text-center text-gray-700">Videografi Event 2</figcaption>
                 </figure>
                 
                 <!-- Item 9 (Tambahan) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="800" data-modal-src="item9.png" data-modal-type="image" data-modal-caption="Editing Foto Portrait">
-                    <img src="item9.png" alt="Gallery 9" class="w-full rounded" />
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="800" data-modal-src="https://via.placeholder.com/300x200?text=Item+9" data-modal-type="image" data-modal-caption="Editing Foto Portrait">
+                    <img src="https://via.placeholder.com/300x200?text=Item+9" alt="Gallery 9" class="w-full rounded" />
                     <figcaption class="mt-2 text-center text-gray-700">Editing Foto Portrait</figcaption>
                 </figure>
                 
                 <!-- Item 10 (Tambahan) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="900" data-modal-src="item10.JPG" data-modal-type="image" data-modal-caption="Dokumentasi Pernikahan">
-                    <img src="item10.JPG" alt="Gallery 10" class="w-full rounded" />
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="900" data-modal-src="https://via.placeholder.com/300x200?text=Item+10" data-modal-type="image" data-modal-caption="Dokumentasi Pernikahan">
+                    <img src="https://via.placeholder.com/300x200?text=Item+10" alt="Gallery 10" class="w-full rounded" />
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Pernikahan</figcaption>
                 </figure>
                 
                 <!-- Item 11 (Tambahan) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1000" data-modal-src="item11.png" data-modal-type="image" data-modal-caption="Fotografi Produk">
-                    <img src="item11.png" alt="Gallery 11" class="w-full rounded" />
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1000" data-modal-src="https://via.placeholder.com/300x200?text=Item+11" data-modal-type="image" data-modal-caption="Fotografi Produk">
+                    <img src="https://via.placeholder.com/300x200?text=Item+11" alt="Gallery 11" class="w-full rounded" />
                     <figcaption class="mt-2 text-center text-gray-700">Fotografi Produk</figcaption>
                 </figure>
                 
                 <!-- Item 12 (Tambahan - Video) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1100" data-modal-src="video3.mp4" data-modal-type="video" data-modal-caption="Short Film Editing">
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1100" data-modal-src="https://www.w3schools.com/html/mov_bbb.mp4" data-modal-type="video" data-modal-caption="Short Film Editing">
                     <video autoplay muted loop playsinline class="w-full rounded">
-                        <source src="video3.mp4" type="video/mp4" />
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                     </video>
                     <figcaption class="mt-2 text-center text-gray-700">Short Film Editing</figcaption>
                 </figure>
@@ -164,3 +188,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Section Contact (Tambahan untuk lengkap) -->
+    <section id="contact" class="py-16 bg-white" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Contact ME!</h3>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/wibezaxxt?utm_source=ig_web_button_share_sheet&igsh=MWZjajdqcWxpaWVnYQ==" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" alt="Instagram" style="width: 50px; height: auto;">
+                </a>
+                <a href="https://wa.me/6285878431028?text=Halo%2C%20apa%20kabar" target="_blank" rel="noopener noreferrer">
+                    <img src="whatsupp.png" alt="Whatsapp" style="width: 50px; height: auto;">
+                </a>
+                <a href="mailto:rizasyahput@gmail.com?subject=Halo&body=Ini%20adalah%20isi%20email%20contoh.">
+                    <img src="email.png" alt="Kirim Email" style="width: 50px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Tambahan) -->
+    <footer class="bg-white border-t py-6 text-center text-gray-500 text-sm" data-aos="fade-up">
+        © 2025 PhortofolioWeb. All rights reserved
+    </footer>
+
+    <!-- Modal Pop-up untuk Gallery (Tambahan) -->
+    <div id="gallery-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div class="modal-backdrop absolute inset
