@@ -77,11 +77,11 @@
         <div class="relative h-[500px]">
             <div id="hero-slider" class="w-full h-full relative">
                 <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100"
-                     style="background-image: url('https://via.placeholder.com/1920x500?text=Hero+Slide+1')"></div>
+                     style="background-image: url('bg.png')"></div>
                 <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
-                     style="background-image: url('https://via.placeholder.com/1920x500?text=Hero+Slide+2')"></div>
+                     style="background-image: url('background.png')"></div>
                 <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
-                     style="background-image: url('https://via.placeholder.com/1920x500?text=Hero+Slide+3')"></div>
+                     style="background-image: url('back.png')"></div>
             </div>
 
             <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
@@ -102,60 +102,120 @@
             <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Koleksi Lengkap Karya</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
                 
-                <!-- Item 1 (Placeholder untuk test) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-modal-src="https://via.placeholder.com/400x300?text=Rizz+1" data-modal-type="image" data-modal-caption="Mendokumentasikan Acara Dikdasmen">
-                    <img src="https://via.placeholder.com/400x300?text=Rizz+1" alt="Gallery 1" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 1 (Asli - src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-modal-src="rizz.png" data-modal-type="image" data-modal-caption="Mendokumentasikan Acara Dikdasmen">
+                    <img src="rizz.png" alt="Gallery 1" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+1';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Mendokumentasikan Acara Dikdasmen</figcaption>
                 </figure>
                 
-                <!-- Item 2 (Video Placeholder) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="100" data-modal-src="https://www.w3schools.com/html/mov_bbb.mp4" data-modal-type="video" data-modal-caption="Dokumentasi Acara Kemerdekaan PR IPM SMK MUDA">
-                    <video autoplay muted loop playsinline class="w-full rounded">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                <!-- Item 2 (Asli - Video, src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="100" data-modal-src="porto.mp4" data-modal-type="video" data-modal-caption="Dokumentasi Acara Kemerdekaan PR IPM SMK MUDA">
+                    <video autoplay muted loop playsinline class="w-full rounded" onerror="this.innerHTML='<p class=\'text-center text-gray-500\'>Video tidak ditemukan</p>';">
+                        <source src="porto.mp4" type="video/mp4" />
                     </video>
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Acara Kemerdekaan PR IPM SMK MUDA</figcaption>
                 </figure>
                 
-                <!-- Item 3 -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="200" data-modal-src="https://via.placeholder.com/400x300?text=Riza+3" data-modal-type="image" data-modal-caption="Social Media Management Brand La Coutivador">
-                    <img src="https://via.placeholder.com/400x300?text=Riza+3" alt="Gallery 3" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 3 (Asli - src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="200" data-modal-src="riza.JPG" data-modal-type="image" data-modal-caption="Social Media Management Brand La Coutivador">
+                    <img src="riza.JPG" alt="Gallery 3" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+3';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Social Media Management Brand La Coutivador</figcaption>
                 </figure>
                 
-                <!-- Item 4 -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="300" data-modal-src="https://via.placeholder.com/400x300?text=Jaksa+4" data-modal-type="image" data-modal-caption="Dokumentasi Acara Jaksa">
-                    <img src="https://via.placeholder.com/400x300?text=Jaksa+4" alt="Gallery 4" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 4 (Asli - src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="300" data-modal-src="jaksa.JPG" data-modal-type="image" data-modal-caption="Dokumentasi Acara Jaksa">
+                    <img src="jaksa.JPG" alt="Gallery 4" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+4';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Acara Jaksa</figcaption>
                 </figure>
                 
-                <!-- Item 5 -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="400" data-modal-src="https://via.placeholder.com/400x300?text=Dikdasmen+5" data-modal-type="image" data-modal-caption="Dokumentasi Dikdasmen">
-                    <img src="https://via.placeholder.com/400x300?text=Dikdasmen+5" alt="Gallery 5" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 5 (Asli - src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="400" data-modal-src="dikdasmen.JPG" data-modal-type="image" data-modal-caption="Dokumentasi Dikdasmen">
+                    <img src="dikdasmen.JPG" alt="Gallery 5" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+5';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Dikdasmen</figcaption>
                 </figure>
                 
-                <!-- Item 6 -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="500" data-modal-src="https://via.placeholder.com/400x300?text=Wisuda+6" data-modal-type="image" data-modal-caption="Dokumentasi Wisuda Tahfizh">
-                    <img src="https://via.placeholder.com/400x300?text=Wisuda+6" alt="Gallery 6" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 6 (Asli - src lokal) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="500" data-modal-src="wisuda tahfizh.JPG" data-modal-type="image" data-modal-caption="Dokumentasi Wisuda Tahfizh">
+                    <img src="wisuda tahfizh.JPG" alt="Gallery 6" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+6';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Wisuda Tahfizh</figcaption>
                 </figure>
                 
-                <!-- Item 7-12 (Placeholder seperti sebelumnya) -->
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="600" data-modal-src="https://via.placeholder.com/400x300?text=Item+7" data-modal-type="image" data-modal-caption="Karya Fotografi Lanskap 1">
-                    <img src="https://via.placeholder.com/400x300?text=Item+7" alt="Gallery 7" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 7 (Tambahan - src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="600" data-modal-src="item7.png" data-modal-type="image" data-modal-caption="Karya Fotografi Lanskap 1">
+                    <img src="item7.png" alt="Gallery 7" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+7';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Karya Fotografi Lanskap 1</figcaption>
                 </figure>
                 
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="700" data-modal-src="https://www.w3schools.com/html/mov_bbb.mp4" data-modal-type="video" data-modal-caption="Videografi Event 2">
-                    <video autoplay muted loop playsinline class="w-full rounded">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                <!-- Item 8 (Tambahan - Video, src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="700" data-modal-src="video2.mp4" data-modal-type="video" data-modal-caption="Videografi Event 2">
+                    <video autoplay muted loop playsinline class="w-full rounded" onerror="this.innerHTML='<p class=\'text-center text-gray-500\'>Video tidak ditemukan</p>';">
+                        <source src="video2.mp4" type="video/mp4" />
                     </video>
                     <figcaption class="mt-2 text-center text-gray-700">Videografi Event 2</figcaption>
                 </figure>
                 
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="800" data-modal-src="https://via.placeholder.com/400x300?text=Item+9" data-modal-type="image" data-modal-caption="Editing Foto Portrait">
-                    <img src="https://via.placeholder.com/400x300?text=Item+9" alt="Gallery 9" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Error+Loading';"/>
+                <!-- Item 9 (Tambahan - src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="800" data-modal-src="item9.png" data-modal-type="image" data-modal-caption="Editing Foto Portrait">
+                    <img src="item9.png" alt="Gallery 9" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+9';"/>
                     <figcaption class="mt-2 text-center text-gray-700">Editing Foto Portrait</figcaption>
                 </figure>
                 
-                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="900" data-modal-src="https://via.placeholder.com
+                <!-- Item 10 (Tambahan - src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="900" data-modal-src="item10.JPG" data-modal-type="image" data-modal-caption="Dokumentasi Pernikahan">
+                    <img src="item10.JPG" alt="Gallery 10" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+10';"/>
+                    <figcaption class="mt-2 text-center text-gray-700">Dokumentasi Pernikahan</figcaption>
+                </figure>
+                
+                <!-- Item 11 (Tambahan - src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1000" data-modal-src="item11.png" data-modal-type="image" data-modal-caption="Fotografi Produk">
+                    <img src="item11.png" alt="Gallery 11" class="w-full rounded" onerror="this.src='https://via.placeholder.com/400x300?text=Item+11';"/>
+                    <figcaption class="mt-2 text-center text-gray-700">Fotografi Produk</figcaption>
+                </figure>
+                
+                <!-- Item 12 (Tambahan - Video, src lokal placeholder) -->
+                <figure class="rounded shadow-md hover:scale-110 hover:shadow-xl transition-transform duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay="1100" data-modal-src="video3.mp4" data-modal-type="video" data-modal-caption="Short Film Editing">
+                    <video autoplay muted loop playsinline class="w-full rounded" onerror="this.innerHTML='<p class=\'text-center text-gray-500\'>Video tidak ditemukan</p>';">
+                        <source src="video3.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption class="mt-2 text-center text-gray-700">Short Film Editing</figcaption>
+                </figure>
+                
+            </div>
+            
+            <!-- Tombol Load More (opsional) -->
+            <div class="text-center mt-12" data-aos="fade-up">
+                <button id="load-more" class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 transition">Load More Karya</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16 bg-white" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Contact ME!</h3>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/wibezaxxt?utm_source=ig_web_button_share_sheet&igsh=MWZjajdqcWxpaWVnYQ==" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" alt="Instagram" style="width: 50px; height: auto;" onerror="this.src='https://via.placeholder.com/50?text=IG';"/>
+                </a>
+                <a href="https://wa.me/6285878431028?text=Halo%2C%20apa%20kabar" target="_blank" rel="noopener noreferrer">
+                    <img src="whatsupp.png" alt="Whatsapp" style="width: 50px; height: auto;" onerror="this.src='https://via.placeholder.com/50?text=WA';"/>
+                </a>
+                <a href="mailto:rizasyahput@gmail.com?subject=Halo&body=Ini%20adalah%20isi%20email%20contoh.">
+                    <img src="email.png" alt="Kirim Email" style="width: 50px; height: auto;" onerror="this.src='https://via.placeholder.com/50?text=Email';"/>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 text-center text-gray-500 text-sm" data-aos="fade-up">
+        © 2025 PhortofolioWeb. All rights reserved
+    </footer>
+
+    <!-- Modal Pop-up untuk Gallery -->
+    <div id="gallery-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div class="modal-backdrop absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto mx-auto z-10">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold z-20">&times;</button>
+            <div id="modal-content" class="p-4 text-center">
+                <!-- Konten akan
